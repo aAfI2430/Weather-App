@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "NectoMono";
+  src: url("NectoMono-Regular.woff") format("woff");
+}
+
+:root {
+  font-family: NectoMono;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #282A2E;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 10px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column; /* Stack elements vertically */
+  padding: 20px; /* Add padding for mobile */
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #E0E0E0;
+}
+h2 {
+  font-size: 1.8em;
+  color: #E0E0E0;
+}
+
+button {
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: NectoMono;
+  background-color: #F45027;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: auto;
+}
+button:hover {
+  background-color: #f450279a;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input[type="number"] {
+  margin: 12px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%; /* Full width for responsive design */
+  max-width: 400px; /* Limit max width on larger screens */
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+/* Media Query for Tablet and Smaller Screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  a {
+    font-size: 0.9em;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.9em; /* Smaller font for buttons */
+    padding: 0.5em 1em;
+  }
+
+  input[type="number"] {
+    padding: 8px;
+    font-size: 0.9em; /* Smaller font for input */
+  }
+}
